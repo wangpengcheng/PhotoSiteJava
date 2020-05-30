@@ -1,7 +1,5 @@
 package com.wang.study.photositejava.utils;
 
-
-
 import org.apache.http.HttpStatus;
 
 import java.util.HashMap;
@@ -53,6 +51,7 @@ public class JsonReturn extends HashMap<String, Object> {
         return JsonReturn;
     }
 
+    @Override
     public JsonReturn put(String key, Object value) {
         super.put(key, value);
         return this;

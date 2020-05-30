@@ -11,7 +11,7 @@
     <properties resource="config\generator.properties"/>
     <!--数据库驱动-->
     <!--设置驱动文件位置 可选-->
-    <classPathEntry    location="C:\Users\Administrator\.m2\repository\mysql\mysql-connector-java\5.1.45\mysql-connector-java-5.1.45.jar"/>
+<!--    <classPathEntry    location="C:\Users\Administrator\.m2\repository\mysql\mysql-connector-java\5.1.45\mysql-connector-java-5.1.45.jar"/>-->
     <!-- 一个数据库一个context -->
     <!--defaultModelType="flat" 大数据字段，不分表 -->
     <context id="MysqlTables"    targetRuntime="MyBatis3Simple" defaultModelType="flat">
