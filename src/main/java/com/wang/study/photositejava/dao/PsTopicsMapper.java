@@ -1,6 +1,7 @@
 package com.wang.study.photositejava.dao;
 
 import com.wang.study.photositejava.bean.PsTopics;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import javax.xml.crypto.Data;
@@ -12,7 +13,10 @@ public interface PsTopicsMapper {
      *
      */
     int insert(PsTopics record);
-
+    /**
+     *  使用主键插入数据
+     **/
+    int insertByPrimayKey(PsTopics record);
     /**
      * 选取所有
      *
@@ -21,7 +25,7 @@ public interface PsTopicsMapper {
     /**
      * 更新topic
      * */
-    void updatePsTopic(@Param("newTopic")PsTopics newTopic);
+    int updatePsTopic(@Param("newTopic")PsTopics newTopic);
     /**
      * 根据id查询
      *
@@ -40,7 +44,7 @@ public interface PsTopicsMapper {
     /**
     * 根据id删除
     */
-    void delectTopicById(@Param("topicId")Long topicId);
+    int delectTopicById(@Param("topicId")Long topicId);
     /**
     * 根据列名称进行查询;
     * 注意只能针对简单的数据string 类型

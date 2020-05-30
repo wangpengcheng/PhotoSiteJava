@@ -1,0 +1,270 @@
+/*登录弹窗*/
+.layui-no-animation.layui-layer{
+    -webkit-animation: none;
+    animation: none;
+}
+.layui-login{
+    height: auto; overflow: hidden;
+}
+.layui-login .login-bg{
+    float: left; background: url(../image/login_bg.jpg) center; width: 428px; height: 523px; position: relative;
+}
+
+.layui-login .login-bg .qr{
+    position: absolute; left: 35px; bottom: 20px;width: 104px; text-align: center;
+}
+.layui-login .login-bg .qr img{
+    width: 104px;
+}
+.layui-login .login-bg .qr p{
+    font-size: 12px; color: #222; font-weight:bold; padding-top: 6px;
+}
+.layui-login .login-main{
+    width: 420px; float: right;
+}
+.layui-login .login-tit{
+    padding-top: 27px; font-size: 20px; color: #222; font-weight: bold; text-align: center; position: relative; padding-bottom: 10px;
+}
+.layui-login .login-tit:after{
+    position: absolute; left: 50%; margin-left: -9px; bottom: 0;
+    width: 18px; height: 2px; background: #fc4349; content: "";
+}
+.layui-login .login-hd{
+    margin-top: 35px;
+}
+.layui-login .login-hd ul{
+    width: 90%;height: auto; overflow: hidden; margin:0 auto;
+}
+.layui-login .login-hd li{
+    width: 33.33%; float: left; text-align: center;
+}
+.layui-login .login-hd li .txt{
+    font-size: 13px; color: #999; padding-top: 12px;
+}
+.layui-login .login-bd{
+    width: 300px; margin: 26px auto 12px; font-size: 12px; color: #888;
+}
+.layui-login .login-bd1{
+    margin-top: 48px;
+}
+.layui-login .login-bd li{
+    margin-bottom: 12px;
+}
+.layui-login .login-bd .text{
+    width: 100%; box-sizing: border-box; border: 1px solid #e5e5e5; height: 42px; padding: 0 12px; font-size: 12px; color: #666;
+}
+.layui-login .login-bd .text::-webkit-input-placeholder{
+    color: #9fa0a0;
+}
+.layui-login .login-bd .text::-ms-input-placeholder{
+    color: #9fa0a0;
+}
+.layui-login  input[type=checkbox] + label{
+    border-color: #e5e5e5;
+}
+.layui-login .login-bd .text_code{
+    width: 190px;
+}
+.layui-login .login-bd .btn_code{
+    float: right; width: 98px; height: 42px;box-sizing: border-box; border: 1px solid #e5e5e5; height: 42px; background: #fff; color: #9fa0a0; font-size: 12px; cursor: pointer; padding: 0;
+}
+.layui-login .login-bd .btn_code:hover{
+    color: #fc4349; border-color: #fc4349;
+}
+.layui-login .login-bd li label{
+    vertical-align: middle; line-height: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.layui-login .login-bd li .tip{
+    vertical-align: middle; margin-left: 5px;
+}
+
+.layui-login .login-ft{
+    width: 300px; margin: 0 auto; text-align: center;
+}
+.layui-login .login-ft button{
+    width: 100%; border: 0; background: #1a1a1a; height: 42px; font-size: 15px; color: #fff; cursor: pointer;
+}
+.layui-login .login-ft button:hover{
+    background: #fc4349;
+}
+.layui-login .login-ft .tip{
+    padding-top: 14px; font-size: 12px; color: #888888;
+}
+.layui-login .login-ft1{
+    padding-top: 20px;
+}
+.layui-login .login-ft1 .tip{
+    padding-top: 26px;
+}
+
+.layui-login a{
+    color: #fc4349;
+}
+.layui-login a:hover{
+    color: #ed151c;
+}
+
+/*领取*/
+.layui-bottom.layui-layer{
+    background: none; box-shadow: none;
+}
+.layui-bottom.layui-layer .layui-layer-setwin{
+    left: 0; right: 0; bottom: 0; top: auto;
+}
+.layui-bottom.layui-layer .layui-layer-setwin .layui-layer-close2{
+    top: auto; bottom: -60px;left: 50%; margin-left: -18px; width: 36px; height: 36px; border: 1px solid #fff; border-radius: 50%; right: auto;
+}
+.layui-receive{
+    background: #930d0d; border-radius: 15px; text-align: center; padding: 35px 0 48px;
+}
+.layui-receive .hd{
+    font-size: 30px;letter-spacing: 2px;  color: #fff; line-height: 1.2;
+}
+.layui-receive .bd{
+    padding-top: 20px;
+}
+.layui-receive .ft{
+    padding-top: 15px;
+}
+.layui-receive .ft .btn{
+    height: 43px; line-height: 43px; width: 195px; display: inline-block; text-align: center; background: #fff; border-radius: 30px; font-size: 16px; color: #fb6737;
+}
+.layui-receive .ft .btn:hover{
+    background: #ffe7bc;
+}
+
+/*完善信息*/
+.layui-evpi .tip{
+    font-size: 14px; color: #999; padding-top: 5px;
+}
+.layui-evpi .form{
+    padding: 0 30px;  margin-top: 5px; margin-bottom: 30px;
+}
+.layui-evpi .form ul{
+    height: auto; overflow: hidden; margin-bottom: -20px;
+}
+.layui-evpi .form li{
+    float: left;width: 410px; position: relative; margin-top: 40px;
+}
+.layui-evpi .form .item-l{
+    width: 80px; text-align: right; padding-right: 20px; font-size: 15px; color: #333; float: left; line-height: 50px;
+}
+.layui-evpi .form .c-red{
+    color: #fc4349; padding-right: 5px;
+}
+.layui-evpi .form .item-r{
+    width: 300px; float: left;
+}
+.layui-evpi .form .text{
+    width: 100%; border: 1px solid #c3c3c3; height: 50px; box-sizing: border-box; padding: 0 12px;  font-size: 14px; color: #666;
+}
+.layui-evpi .form  select{
+    width: 100%; border: 1px solid #c3c3c3; height: 50px; box-sizing: border-box; padding: 0 12px; font-size: 14px; color: #666;
+}
+.layui-evpi .form .code-wrap{
+    border: 1px solid #c3c3c3; height: 50px; width:218px; float: left; box-sizing: border-box; position: relative;
+}
+.layui-evpi .form .code-wrap:after{
+    position: absolute; right: 105px; top: 50%; height: 20px; margin-top: -10px; width: 1px; background: #c3c3c3; content: "";
+}
+.layui-evpi .form .text-phone{
+    width: 110px; border: 0; float: left; padding: 0 8px; height: 48px;
+}
+.layui-evpi .form .text-code{
+    width: 75px;  border: 0; float: right; padding: 0; text-align: center; height: 50px;border: 1px solid #c3c3c3; font-size: 12px;
+}
+.layui-evpi .form .btn_code{
+    width: 105px; float: right;height: 48px; border: 0; font-size: 12px; color: #666; cursor: pointer;background: #fff; padding: 0;
+}
+.layui-evpi .form .btn_code:hover{
+    color: #fc4349;
+}
+
+/*代金券 领取*/
+.layui-cashcoupon{
+    padding-left: 473px; background: url(../image/cashcoupon-img1.png) left center no-repeat;  height: 708px;
+}
+.layui-cashcoupon .cashcoupon-main{
+    text-align: center; padding-top: 76px;
+}
+.layui-cashcoupon .cashcoupon-txt{
+    padding-top: 40px; font-size: 13px; color: #999999; line-height: 1.8;
+}
+.layui-cashcoupon .cashcoupon-list{
+    margin:35px auto ; width: 272px; height: 357px; background:url(../image/cashcoupon-bg2.png) center no-repeat ;
+}
+.layui-cashcoupon .cashcoupon-list .bd{
+    padding-top: 40px;
+}
+.layui-cashcoupon .cashcoupon-list .item{
+    background: url(../image/cashcoupon-bg1.png) center no-repeat; width: 206px; height: 80px; margin: 0 auto; margin-bottom: 20px;
+}
+.layui-cashcoupon .cashcoupon-list .item:last-child{
+    margin-bottom: 0;
+}
+.layui-cashcoupon .cashcoupon-list .item-l{
+    float: left; width: 100px; padding-top: 22px; padding-left: 2px;
+}
+.layui-cashcoupon .cashcoupon-list .big{
+    font-size: 17px; color: #fc4349;
+}
+.layui-cashcoupon .cashcoupon-list .small{
+    font-size: 12px;-webkit-transform: scale(0.9); transform: scale(0.9);
+}
+.layui-cashcoupon .cashcoupon-list .item-r{
+    width: 100px; float: right; padding-top: 18px; color: #fc4349; font-size: 14px; line-height: 1.2; padding-right: 3px;
+}
+.layui-cashcoupon .cashcoupon-list .num{
+    font-size: 38px;
+}
+.layui-cashcoupon .cashcoupon-list .ft{
+    margin-top: 40px;
+}
+.layui-cashcoupon .cashcoupon-list .time{
+    font-size: 12px; color: #aa2118; height: auto; overflow: hidden;
+}
+
+.layui-cashcoupon .cashcoupon-list .btn{
+    margin-top: 10px; text-align: center; width: 165px; height: 40px; text-align: center; line-height: 40px; display: inline-block; background: #ffedcd; border-radius: 20px; font-size: 20px; color: #fb4446;
+}
+.layui-cashcoupon .cashcoupon-list .btn:hover{
+    background: #ffe7bc;
+}
+
+/*领取成功*/
+.layui-receive1{
+    background: #fff; border-radius: 15px; padding: 45px 40px; text-align: center;color: #333;
+}
+.layui-receive1 .hd{
+    font-size: 22px; font-weight: bold; line-height: 1.2;
+}
+.layui-receive1 .bd{
+    padding-top: 20px; font-size: 14px;
+}
+.layui-receive1 .bd .c-red{
+    color: #fc393a;
+}
+.layui-receive1 .bd  .txt{
+    line-height: 1.6;
+}
+.layui-receive1 .bd .img{
+    padding-top: 32px;
+}
+.layui-receive1 .ft{
+    padding-top: 34px; text-align: center;
+}
+.layui-receive1 .ft .btn{
+    width: 135px; height: 32px; text-align: center; display: inline-block; line-height: 32px; border-radius: 15px; background: #f05b36; font-size: 14px; color: #fff; box-shadow:0 3px 5px rgba(240,91,54,0.3);
+    background: -webkit-linear-gradient(#fe9e66 5%, #f05e38);
+    background: -o-linear-gradient(#fe9e66 5%, #f05e38);
+    background: -moz-linear-gradient(#fe9e66 5%, #f05e38);
+    background: linear-gradient(#fe9e66 5%, #f05e38);
+
+}
+.layui-receive1 .ft .btn:hover{
+    background: #f05b36;
+}

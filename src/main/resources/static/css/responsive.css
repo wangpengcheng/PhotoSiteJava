@@ -1,0 +1,621 @@
+/*pad*/
+
+img{
+
+	max-width: 100%;
+
+}
+
+@media only screen and (max-width:1px) {
+
+	.wrapper{
+
+		width: 1220px;
+
+	}	
+
+	.h_sorts .body ul li{
+
+		/*width: 188px;*/
+
+	}
+
+	.h_sorts .body ul li .img img{
+
+		width: 188px; height: auto;
+
+	}
+
+	.h_sorts .body ul li .mask_blk{
+
+		/*width: 188px; height: 550px;*/
+
+	}
+
+	.h_pics .body li.slide .n1 img, .h_pics .body li.slide .n6 img{
+
+		width: 300px; height: 457px;
+
+	}
+
+	.h_pics .body li.slide .n1, .h_pics .body li.slide .n2, .h_pics .body li.slide .n6, .h_pics .body li.slide .n7{
+
+		width: 300px;
+
+	}
+
+	.h_pics .body li.slide .n2 img, .h_pics .body li.slide .n7 img{
+
+		width: 300px; height: auto;
+
+	}
+
+	.h_pics .body li.slide .n3, .h_pics .body li.slide .n4, .h_pics .body li.slide .n5{
+
+		width: 370px; margin-left: -185px;
+
+	}
+
+	.h_pics .body li.slide{
+
+		height: 888px;
+
+	}
+
+	.h_pics .body li.slide .n4{
+
+		height: 420px; margin-top: -210px;/*by gy*/
+
+	}
+
+	.h_pics .body li.slide .n4 img{
+
+		height: 420px;
+
+	}
+
+	.h_pics .body li.slide .n3 img, .h_pics .body li.slide .n5 img{
+
+		width: 390px; height: 230px;/*by gy*/
+
+	}
+
+	.h_pics .body li.slide dd .txt{
+
+		padding-top: 70px;
+
+	}
+
+	.h_pics .body li.slide dd .txt .txt_b .cart{
+
+		margin-left: 28px;
+
+	}
+
+	.h_pics .body li.slide dd.n3 .txt .txt_b .cart,
+
+	.h_pics .body li.slide dd.n4 .txt .txt_b .cart,
+
+	.h_pics .body li.slide dd.n5 .txt .txt_b .cart{
+
+		margin-left: 62px;
+
+	}
+
+	.h_arter .body ul li{
+
+		width: 266px;
+
+	}
+
+	.h_foot .txt{
+
+		font-size: 20px;
+
+	}
+
+	.footer .logo, .footer .nav, .footer .qrimg,
+
+	.footer .link{
+
+		/*width:50%;*/ margin: 0; text-align: center;
+
+	}
+	.footer .nav{
+		margin-left:40px;
+	}
+
+	.footer .nav dl{
+
+		text-align: center; width: 50%; margin: 0;
+
+	}
+
+	.footer .logo h4 a{
+
+		text-align: center;
+
+	}
+
+	.footer .link a{
+
+		margin: 0 auto;
+
+	}
+
+	.footer .qrimg .txt .qq a{
+
+		text-align: left;
+
+	}
+
+	.footer .qrimg .img{
+
+		margin-left: 120px;
+
+	}
+
+	.h_pics .body{
+
+		height: 1058px;
+
+	}
+
+	.center_wrap .nav ul li{
+
+		margin-right: 56px;
+
+	}
+
+	.price_list table tr td span{
+
+		width: 85px; right: -35px;
+
+	}
+
+	.contact_us .cont li{
+
+		width: 234px;
+
+	}
+
+	.contact_us .form ul{
+
+		width: 100%;
+
+	}
+
+	.contact_us .form ul li{
+
+		width: 50%; margin-right: 0;
+
+	}
+
+	.contact_us .form ul li.last .txt{
+
+		width: 76%;
+
+	}
+
+	.center_wrap .head .naver li{
+
+		margin-right: 91px;
+
+	}
+
+	.center_wrap .head .naver li.last{
+
+		margin-left: -2px;
+
+	}
+
+	.user_collection .hd ul li a{
+
+		margin: 0 25px;
+
+	}
+
+	.user-Authorized .table tr td .i_mr{
+
+		right: 65px;
+
+	}
+
+	.user_subaccount .result li, .user_subaccount .w_shan li{
+
+		margin-bottom: 10px;
+
+	}
+
+	.user_subaccount .p_txt{
+
+		width: 330px;
+
+	    overflow: hidden; /*自动隐藏文字*/
+
+		text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+
+		white-space: nowrap;/*强制不换行*/
+
+		padding-right: 10px;
+
+	}
+
+	.c_income_nav .nav ul li a{
+
+		margin-right: 55px;
+
+	}
+
+	.c_edit .wrap .body ul li{
+
+		width: 385px; margin-right: 50px;
+
+	}
+
+	.c_edit .wrap .body ul li .dropdown,
+
+	.c_edit .wrap .body ul li .txt{
+
+		width: 373px;
+
+	}
+
+	.c_edit .wrap .body ul li dl dd{
+
+		 padding: 0 39px 0 15px;
+
+	}
+
+	.footer01 .nav{
+
+		width: 420px;
+
+	}
+
+	.footer01 .qrimg{
+
+		float: left; width: 100%;  margin: 20px 20%;
+
+	}
+
+	.footer .qrimg .txt h4{
+
+		text-align: left;
+
+	}
+
+	.footer01 .nav dl{
+
+		width: 100%;
+
+	}
+
+	.cid_wrap .body ul li{
+
+		margin-right: 0;
+
+	}
+
+	.income_money li{
+
+		margin-right: 15px;
+
+	}
+
+	.c_income_tab .head .wrap{
+
+		margin-right: 10px;
+
+	}
+
+	.c_income_tab .head .wrap .txt{
+
+		width: 105px; padding-left: 5px;
+
+	}
+
+	.c_income_tab .head .wrap .txt1{
+
+		background: url(../image/date.png) no-repeat  84px center;
+
+	}
+
+	.ui_table .img{
+
+		width: 100px;
+
+	}
+
+	.user_record table tr td .img01{
+
+		width: 75px;
+
+	}
+
+	.c-upload ul li{
+
+		width: 252px; margin-right: 24px;
+
+	}
+
+	.c-upload ul li .img{
+
+		width: 252px;
+
+	}
+
+	.c_upload_il li{
+
+		margin: 0 20px;
+
+	}
+
+	.company_page2 ul li{
+
+		/*width: 230px;*/
+
+	}
+
+	.company_page3 .wrap ul{
+
+		padding: 30px 60px 0;
+
+	}
+
+	.cooperation ul li{
+
+		padding: 0 33px;
+
+	}
+
+	.pin_wrap{
+
+		 padding: 55px 157px 90px;
+
+	}
+
+	.fans_page .body ul li{
+
+		margin: 0 25.5px 30px;
+
+	}
+
+	.album_page .glide{
+
+		width: 1000px;
+
+	}
+
+	.album_page .glide li dl  img{
+
+		width: 250px; height: 250px; display: block;
+
+	}
+
+	.album_page .glide li dl .img1 img,
+
+	.album_page .glide li dl .img7 img,
+
+	.album_page .glide li dl .img13 img{
+
+		height: 500px; width: 250px;
+
+	}
+
+	.album_page .glide li dl .img11 img{
+
+		width: 750px; height: 250px;
+
+	}
+
+	.album_page .glide li dl .img14,
+
+	.album_page .glide li dl .img17,
+
+	.album_page .glide li dl .img9,
+
+	.album_page .glide li dl .img5,
+
+	.album_page .glide li dl .img2{
+
+		left: 250px;
+
+	}
+
+	.album_page .glide li dl .img15,
+
+	.album_page .glide li dl .img18,
+
+	.album_page .glide li dl .img10,
+
+	.album_page .glide li dl .img6,
+
+	.album_page .glide li dl .img3{
+
+		left: 500px;
+
+	}
+
+	.album_page .glide li dl .img5,
+
+	.album_page .glide li dl .img6,
+
+	.album_page .glide li dl .img7{
+
+		top: 250px;
+
+	}
+
+	.album_page .glide li dl .img10,
+
+	.album_page .glide li dl .img9,
+
+	.album_page .glide li dl .img8{
+
+		top: 500px;
+
+	}
+
+	.album_page .glide li dl .img11,
+
+	.album_page .glide li dl .img12{
+
+		top: 750px;
+
+	}
+
+	.album_page .glide li dl .img14,
+
+	.album_page .glide li dl .img15,
+
+	.album_page .glide li dl .img16{
+
+		bottom:250px;
+
+	}
+
+	.album_page .glide .slide dl{
+
+		height: 1500px;
+
+	}
+
+	.c_income_tab .head .ui_btn{
+
+		margin-left: 0;
+
+	}
+
+	.ui_table .txt{
+
+		margin-left: 10px;
+
+	}
+
+	.price_im ul li.yes .bd dl dd{
+
+		width: 250px;
+
+	}
+
+	.price_im ul li.no .bd dl dd{
+
+		width: auto;
+
+	}
+
+	.s_buy_info .table .img, .s_buy_info .table .txt{
+
+		margin-left: 10px;
+
+	}
+
+	.s_buy_info .table .txt{
+
+		 position: relative; top: 15px;
+
+	}
+
+	.contact_us .cont li .hd{
+
+		font-size: 14px;
+
+	}
+
+	.contact_us .cont li .bd p{
+
+		font-size: 13px;
+
+	}
+
+	
+
+	/*picture-info04*/
+
+	.picture_head02 .img,
+
+	.picture_head .img{
+
+		width:45%;	
+
+	}
+
+	.picture_head02 .txt,
+
+	.picture_head01 .txt{
+
+		width:50%;
+
+	}
+
+	.picture_head02 .txt .btns li a{
+
+		width: 40%;
+
+	}
+
+	/*2017-7-14新增*/
+
+	.c_home01 .container li{
+
+		margin-right: 80px;
+
+	}
+
+	.c_home02 .body{
+
+		left: 0; overflow: hidden;
+
+	}
+
+	.editpage_input ul li{
+
+		margin-right: 40px;
+
+		width: 388px;
+
+	}
+
+	.editpage_input ul li .dropdown div,
+
+	.editpage_input ul li .dropdown li{
+
+		width: 396px;
+
+	}
+
+	.editpage_input ul li .dropdown,
+
+	.editpage_input ul li .txt{
+
+		width: 386px;
+
+	}
+
+	.editpage_input ul li dl.color dd span{
+
+		width: 30px; height: 30px;
+
+	}
+
+	.editpage_input ul li dl dd img{
+
+		width: 30px; height: 30px;
+
+	}
+
+	.editpage_input ul li .sub .btn{
+
+		position: relative; right: -9px;
+
+	}
+
+	.editpage_input ul li .sub .btn{
+
+		width: 90px; padding: 6px;
+
+	}
+
+}
+
