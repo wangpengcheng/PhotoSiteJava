@@ -38,4 +38,25 @@
     display_photo_url, topic_message
     from ps_topics
   </select>
+  <select id="findTopicById" parameterType="Long" resultMap="BaseResultMap">
+        select * from ps_topics where topic_id = #{topicId};
+  </select>
+  <select id="findCreateTimeById" parameterType="Long" resultType="java.util.Date">
+     select create_time from ps_topics where topic_id = #{topicId};
+  </select>
+  <select id="findTopicbyName" parameterType="String" resultType="BaseResultMap">
+     select * from ps_topics where topic_id = #{topicName};
+  </select>
+  <delete id="delectTopicById" parameterType="Long">
+     <if test="topicId!=null">
+       delete from ps_topics where topic_id = #{topicId,jdbcType= jdbcType=BIGINT};
+     </if>
+  </delete>
+  <select id="findPsTopicByColumn" resultType="string">
+       select #{columnName} from ps_topics where #{columnName} = #{columnValue}
+
+  </select>
+  <select id="findTopicValueByColumnName" resultType="string">
+        select #{columnName} from ps_topics where topic_id = # {topicId}
+  </select>
 </mapper>
