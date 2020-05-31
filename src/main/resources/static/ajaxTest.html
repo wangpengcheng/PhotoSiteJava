@@ -31,11 +31,11 @@
 	$(function(){
 		//$($(".btns>ul>li>a")[0]).click(function(){
     		$.ajax({
-    			url:"http://localhost:8080/topic/insert",
+    			url:"http://localhost:8080/comments/add",
     			type:"post",
     			timeout:3000,
 				contentType:'application/json;charset=utf-8',//指定为json类型
-    			data:JSON.stringify({"topicName":"api","displayUrl":"displayUrl2","topicMessage":"displayLittleUrl1","displayLittleUrl":"displayLittleUrl2"}),
+    			data: JSON.stringify({"photoId":1,"commentType":"ceshi"}),
     			dataType:"json",
     			success:function(result){
     				console.log(result);

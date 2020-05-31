@@ -17,6 +17,7 @@ import javax.servlet.ServletException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 /**
  * PsTopic 对应的数据控制类;
@@ -41,7 +42,7 @@ public class TopicController {
      * 主要实现全部的查询功能
      * */
     @RequestMapping(value = "select",method = RequestMethod.GET)
-    public JsonReturn getAll() throws ServletException  {
+    public Map<String, Object> getAll() throws ServletException  {
         List<PsTopics> allTopiccs=topicService.selectAll();
         JsonReturn res=JsonReturn.ok();
         if(allTopiccs==null){
@@ -55,7 +56,7 @@ public class TopicController {
         return res;
     }
     @RequestMapping(value = "insert",method = RequestMethod.POST)
-    public JsonReturn insertTopic(@RequestBody final TopicInserter topicInserter){
+    public Map<String, Object> insertTopic(@RequestBody final TopicInserter topicInserter){
         log.info("insert new topic  {}",topicInserter.topicName);
         PsTopics psTopics = new PsTopics();
         psTopics.setTopicName(topicInserter.topicName);

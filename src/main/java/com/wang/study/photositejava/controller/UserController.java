@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletException;
+import java.util.Map;
 
 @RestController
 @Slf4j
@@ -23,7 +24,7 @@ public class UserController {
      * 登录接口
      * */
     @GetMapping("/login")
-    public JsonReturn login(@RequestParam String userName,@RequestParam String passWord) throws ServletException {
+    public Map<String, Object> login(@RequestParam String userName, @RequestParam String passWord) throws ServletException {
         log.info("get request data: {}",userName);
         JsonReturn res=JsonReturn.ok();
         PsUsers user = userService.findByUsernameAndPassword(userName,passWord);
