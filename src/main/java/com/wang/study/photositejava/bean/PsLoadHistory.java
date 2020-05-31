@@ -1,7 +1,9 @@
 package com.wang.study.photositejava.bean;
 
 import java.util.Date;
-
+/**
+ * 主要是用来记录用户上传和下载图片的数量
+ * */
 public class PsLoadHistory {
     /**
      *

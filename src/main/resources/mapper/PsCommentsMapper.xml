@@ -36,16 +36,80 @@
         comment_content
         )
     values (
-        #{photoId,jdbcType=BIGINT},
-        #{commentDate,jdbcType=TIMESTAMP},
-        #{commentKarma,jdbcType=INTEGER},
-        #{commentApproved,jdbcType=VARCHAR},
+      <choose>
+        <when test="photoId!=null">
+            #{photoId,jdbcType=BIGINT},
+        </when>
+        <otherwise>
+            1,
+        </otherwise>
+      </choose>
+      <choose>
+          <when test="commentDate!=null">
+              #{commentDate,jdbcType=TIMESTAMP},
+          </when>
+          <otherwise>
+              NOW(),
+          </otherwise>
+      </choose>
+        <choose>
+            <when test="commentKarma!=null">
+                #{commentKarma,jdbcType=INTEGER},
+            </when>
+            <otherwise>
+                1,
+            </otherwise>
+        </choose>
+       <choose>
+           <when test="commentApproved!=null">
+               #{commentApproved,jdbcType=VARCHAR},
+           </when>
+           <otherwise>
+               "empty",
+           </otherwise>
+       </choose>
+      <choose>
+      <when test="commentAgent!=null">
         #{commentAgent,jdbcType=VARCHAR},
-        #{commentType,jdbcType=VARCHAR},
-        #{userId,jdbcType=BIGINT},
-        #{userName,jdbcType=VARCHAR},
-        #{commentContent,jdbcType=LONGVARCHAR}
-        )
+      </when>
+      <otherwise>
+        'ceshi',
+      </otherwise>
+      </choose>
+      <choose>
+          <when test="commentType!=null">
+              #{commentType,jdbcType=VARCHAR},
+          </when>
+          <otherwise>
+              'ceshi',
+          </otherwise>
+      </choose>
+        <choose>
+            <when test="userId!=null">
+                #{userId,jdbcType=BIGINT},
+            </when>
+            <otherwise>
+                3,
+            </otherwise>
+        </choose>
+        <choose>
+            <when test="userName!=null">
+                #{userName,jdbcType=VARCHAR},
+            </when>
+            <otherwise>
+                '游客',
+            </otherwise>
+        </choose>
+        <choose>
+            <when test="commentContent!=null">
+                #{commentContent,jdbcType=LONGVARCHAR}
+            </when>
+            <otherwise>
+                'ceshi'
+            </otherwise>
+        </choose>
+
+        );
   </insert>
   <select id="selectAll" resultMap="BaseResultMap">
     <!--
